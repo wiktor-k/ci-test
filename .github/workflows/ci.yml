@@ -1,0 +1,20 @@
+on: [push]
+
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 10
+      - run: exit 0
+
+  second:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: exit 1
+
+  third:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 20
+      - run: exit 0
